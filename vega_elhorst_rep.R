@@ -2,7 +2,7 @@ setwd("C:/Users/User/Desktop/SLXmodel")
 
 ##################### You will need those packages
 libs<-c("xlsx", "plm", "fixest", "pracma")
-lapply(libs, require, character.only=TRUE)
+lapply(libs, library, character.only=TRUE)
 
 ##################### Original dataset
 #####################
@@ -53,10 +53,6 @@ names<-c("time", "id", "y", "x1", "x2")
 colnames(data2)<-names
 
 ############
-#T=30
-#N=46
-
-#### You need two packages:
 
 source("f_gravity_alpha_fe.R")
 
